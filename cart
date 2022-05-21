@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>cart</title>
+    <style>
+        .container
+        { 
+          width: 1100px;  
+          display: flex;
+          margin: auto;
+          background-color: 1px solid red;
+        }
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+        }
+        .card{
+            width: 350px;
+           display: block;
+          margin: 10px 10px 0px 10px;
+            background-color: 1px solid red;
+           
+            
+        }
+        img{
+            width: 100%;
+        }
+        #top
+        {
+            margin-top: 50px;
+        }
+        p{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="top">
+        <div class="card">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/xblog1.jpg.pagespeed.ic.s1W931fRN7.webp" alt=""/>
+        <p>Fashion Tips</p> 
+        <h4>What Curling Irons Are The Best Ones</h4>   
+        <p>consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus.</p>
+    <h3><u>Read More</u></h3>    
+    </div>
+    
+            <div class="card"><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/xblog2.jpg.pagespeed.ic.JaQe05m-gL.webp" alt=""/>
+                <p>Fashion Tips</p> 
+                <h4>Vogue's Ultimate Guide To Autumn/ Winter 2019 shoes</h4>   
+                <p>consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus.</p>
+            <h3><u>Read More</u></h3>  
+            </div>
+           <div class="card">    <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/xblog3.jpg.pagespeed.ic.hExcbkUXD4.webp" alt=""/>
+         
+            <p>Fashion Tips</p> 
+            <h4>What Curling Irons Are The Best Ones</h4>   
+            <p>consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus.</p>
+        <h3><u>Read More</u></h3>  </div>
+         
+        </div>
+    </div>
+   
+    
+</body>
+</html>
