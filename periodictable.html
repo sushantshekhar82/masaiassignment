@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>periodic table</title>
+    <style>
+        .container
+        {
+            width: 1200px;
+            height: 70px;
+            margin: auto;
+            
+            display: flex;
+        }
+        .card
+        { border:  1px solid rgb(1, 0, 2);
+            width: 40px;
+            height: 40px;
+            
+            margin: 10px 10px 10px 10px;
+        }
+
+        .white
+        {
+            background-color: white;
+            border: 1px solid white;
+            width: 40px;
+            height: 40px;
+            
+            margin: 10px 10px 10px 10px;
+        }
+        .green
+        {
+            background-color: green;
+            border:  1px solid rgb(1, 0, 2);
+            width: 40px;
+            height: 40px;
+            
+            margin: 10px 10px 10px 10px;
+        }
+        .pink
+        {
+            background-color: rgb(231, 38, 183);
+            border:  1px solid rgb(1, 0, 2);
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            
+            margin: 10px 10px 10px 10px;
+        }
+        .darkpink
+        {
+            background-color: rgb(161, 4, 91);
+            border:  1px solid rgb(1, 0, 2);
+            width: 40px;
+            height: 40px;
+            
+            margin: 10px 10px 10px 10px;
+        }
+        .yellow
+        {
+            background-color: rgb(181, 241, 15);
+            border:  1px solid rgb(1, 0, 2);
+            width: 40px;
+            height: 40px;
+            
+            margin: 10px 10px 10px 10px;
+        }
+        .purple
+        {
+            background-color: rgb(76, 10, 102);
+            border:  1px solid rgb(1, 0, 2);
+            width: 40px;
+            height: 40px;
+            
+            margin: 10px 10px 10px 10px;
+        }
+        .orange
+        {
+            background-color: rgb(238, 81, 9);
+            border:  1px solid rgb(1, 0, 2);
+            width: 40px;
+            height: 40px;
+            
+            margin: 10px 10px 10px 10px;
+        }
+        .blue
+        {
+            background-color: rgb(4, 34, 207);
+            border:  1px solid rgb(1, 0, 2);
+            width: 40px;
+            height: 40px;
+            
+            margin: 10px 10px 10px 10px;
+        }
+        .red{
+            background-color: rgb(189, 4, 4);
+            border:  1px solid rgb(1, 0, 2);
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            margin: 10px 10px 10px 10px;
+
+        }
+        .gray
+        {
+            background-color: rgb(68, 68, 68);
+            border:  1px solid rgb(1, 0, 2);
+            width: 40px;
+            height: 40px;
+            
+            margin: 10px 10px 10px 10px;
+        }
+        .light
+        { margin: auto;
+            width: 35px;
+             height: 35px;
+             border: 1px solid black;
+            background-color: rgb(190, 137, 57);
+
+        }
+        .dark{
+            margin: auto;
+            width: 35px;
+             height: 35px;
+             border: 1px solid black;
+            background-color: rgb(94, 68, 30);
+
+        }
+        .border
+        {
+
+            background-color: rgb(255, 248, 248);
+            border:  4px solid rgb(1, 0, 2);
+            width: 36px;
+            height: 36px;
+            
+            margin: 10px 10px 10px 10px;
+        }
+        .mainsmall
+        { 
+
+           
+            margin: auto;
+            margin-top: 50px;
+
+
+        }
+        .box
+        {
+            width: 400px;
+            height: 35px;
+            display: flex;
+            margin: auto;
+            border: 1px solid black;
+
+
+        }
+        .boxcard
+        {
+             width: 30px;
+             height: 30px;
+             border: 1px solid black;
+             margin: auto;
+        }
+        .bleft
+        { margin-top: -34px;
+          border: 0px 0px 1px 1px;
+          border-color: black;
+         
+         background-color:rgb(27, 139, 51) ;
+         width: 62px;
+          
+           height: 80px;
+        }
+        .bright
+        { margin-top: -34px;
+          border: 0px 1px 1px 0px;
+          border-color: black;
+         
+         background-color:rgb(27, 139, 51) ;
+         width: 62px;
+         height: 80px;
+        }
+        .tleft
+        {border-color: black;
+         margin-top: auto;
+          background-color:rgb(27, 139, 51) ;
+          width: 62px;
+            height: 36px;
+
+            border: 1px 0px 0px 1px;
+            
+        }
+        .tright
+        { border-color: black;
+            margin-top: auto;
+          background-color:rgb(27, 139, 51) ;
+          width: 62px;
+            height: 36px;
+            text-align: right;
+            font-size: 20px;
+            border: 1px 1px 0px 0px;
+           
+        }
+        .b{ border-color: black;
+            margin-top: -34px;
+         background-color:rgb(27, 139, 51) ;
+         width: 62px;
+         height: 80px;
+           border: 0px 0px 1px 0px;
+        }
+        .u{ border-color: black;
+            border: 1px 0px 0px 0px;
+            margin-top: auto;
+          background-color:rgb(27, 139, 51) ;
+          width: 62px;
+            height: 36px;
+
+        }
+        .ml
+        {
+            border: 1px 0px 0px 1px;
+            border-color: black;
+        font-size: 39px;
+         background-color:rgb(27, 139, 51) ;
+         width: 62px;
+           height: 36px;
+        }
+        .mr
+        {
+            border: 0px 1px 0px 0px;
+            border-color: black;
+         
+          background-color:rgb(27, 139, 51) ;
+          width: 62px;
+            height: 36px;
+        }
+        .m
+        {
+            border: 0px 0px 0px 0px;
+            border-color: black;
+         
+          background-color:rgb(27, 139, 51) ;
+          width: 62px;
+            height: 36px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red" class="card">
+           H
+        </div>
+        
+       
+        <div class="white" class="card">
+           
+        </div>
+        <div class="white" class="card">
+           
+        </div>
+        <div  class="tleft" >
+           
+        </div>
+        <div  class="u" >
+           
+        </div>
+        <div  class="tright" >
+           14
+        </div>
+        <div class="white" class="card">
+           
+        </div>
+        <div class="white" class="card">
+           
+        </div>
+        <div class="white" class="card">
+           
+        </div>
+        <div class="white" class="card">
+           
+        </div>
+        <div class="white" class="card">
+           
+        </div>
+        <div class="white" class="card">
+           
+        </div>
+        <div class="white" class="card">
+           
+        </div>
+        <div class="white" class="card">
+           
+        </div>
+        <div class="white" class="card">
+           
+        </div>
+        <div class="white" class="card">
+           
+        </div>
+        <div class="white" class="card">
+           
+        </div>
+        
+        <div class="yellow" class="card">
+           
+        </div>
+     </div>
+        <div class="container">
+            <div class="green" class="card">
+               
+            </div>
+            <div class="pink" class="card">
+               4
+            </div>
+            <div class="white" class="card">
+           
+            </div>
+            
+            <div class="ml">
+               Si
+            </div>
+            <div class="m" >
+               
+            </div>
+            <div class="mr">
+               
+            </div>
+            <div class="white" class="card">
+               
+            </div>
+            <div class="white" class="card">
+               
+            </div>
+            <div class="white" class="card">
+               
+            </div>
+            <div class="white" class="card">
+               
+            </div>
+            <div class="white" class="card">
+               
+            </div>
+            <div class="white" class="card">
+               
+            </div>
+            <div class="purple" class="card">
+               
+            </div>
+            <div class="green" class="card">
+               
+            </div>
+            <div class="green" class="card">
+               
+            </div>
+            <div class="green" class="card">
+               
+            </div>
+            <div class="darkpink" class="card">
+               
+            </div>
+            <div class="yellow" class="card">
+               
+            </div>
+            
+            
+         </div>
+         <div class="container">
+            <div class="green" class="card">
+               
+            </div>
+            <div  class="pink" class="card">
+               12
+            </div>
+            <div class="white" class="card">
+           
+            </div>
+            
+            <div class="bleft">
+               silicon
+            </div>
+            <div class="b" >
+               
+            </div>
+            <div class="bright">
+               
+            </div>
+            <div class="white" class="card">
+               
+            </div>
+            <div class="white" class="card">
+               
+            </div>
+            <div class="white" class="card">
+               
+            </div>
+            <div class="white" class="card">
+               
+            </div>
+            <div class="white" class="card">
+               
+            </div>
+            <div class="white" class="card">
+               
+            </div>
+            <div class="orange" class="card">
+               
+            </div>
+            <div class="purple" class="card">
+               
+            </div>
+            <div class="green" class="card">
+               
+            </div>
+            <div class="green" class="card">
+               
+            </div>
+            <div class="darkpink" class="card">
+               
+            </div>
+            <div class="yellow" class="card">
+               
+            </div>
+            
+            
+         </div>
+         <div class="container">
+            <div class="green" class="card">
+               
+            </div>
+            <div class="pink" class="card">
+               20
+            </div>
+            <div class="white" class="card">
+           
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="orange" class="card">
+               
+            </div>
+            <div class="purple" class="card">
+               
+            </div>
+            <div class="purple" class="card">
+               
+            </div>
+            <div class="green" class="card">
+               
+            </div>
+            <div class="darkpink" class="card">
+               
+            </div>
+            <div class="yellow" class="card">
+               
+            </div>
+            
+            
+         </div>
+         <div class="container">
+            <div class="green" class="card">
+               
+            </div>
+            <div class="pink" class="card">
+               38
+            </div>
+            <div class="white" class="card">
+           
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="orange" class="card">
+               
+            </div>
+            <div class="orange" class="card">
+               
+            </div>
+            <div class="purple" class="card">
+               
+            </div>
+            <div class="purple" class="card">
+               
+            </div>
+            <div class="darkpink" class="card">
+               
+            </div>
+            <div class="yellow" class="card">
+               
+            </div>
+            
+            
+         </div>
+         <div class="container">
+            <div class="green" class="card">
+               
+            </div>
+            <div class="pink" class="card">
+               56
+            </div>
+            <div class="border" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="orange" class="card">
+               
+            </div>
+            <div class="orange" class="card">
+               
+            </div>
+            <div class="orange" class="card">
+               
+            </div>
+            <div class="purple" class="card">
+               
+            </div>
+            <div class="darkpink" class="card">
+               
+            </div>
+            <div class="yellow" class="card">
+               
+            </div>
+            
+            
+         </div>
+         <div class="container">
+            <div class="green" class="card">
+               
+            </div>
+            <div class="pink" class="card">
+               88
+            </div>
+            <div class="border" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="blue" class="card">
+               
+            </div>
+            <div class="gray" class="card">
+               
+            </div>
+            <div class="gray" class="card">
+               
+            </div>
+            <div class="gray" class="card">
+               
+            </div>
+            <div class="gray" class="card">
+               
+            </div>
+            <div class="gray" class="card">
+               
+            </div>
+            <div class="gray" class="card">
+               
+            </div>
+            
+            
+         </div>
+       <div class="mainsmall">
+           <div class="box">
+            <div class="dark" class="boxcard">
+
+        </div> <div class="dark" class="boxcard">
+
+        </div> 
+        <div class="dark" class="boxcard">
+
+        </div> 
+        <div class="dark" class="boxcard">
+
+        </div> 
+        <div class="dark" class="boxcard">
+
+        </div> 
+        <div class="dark" class="boxcard">
+
+        </div> 
+        <div class="dark" class="boxcard">
+
+        </div> 
+        <div class="dark" class="boxcard">
+
+        </div> 
+        <div class="dark" class="boxcard">
+
+        </div> 
+        <div class="dark" class="boxcard">
+
+        </div> 
+        <div class="dark" class="boxcard">
+
+        </div> 
+        <div class="dark" class="boxcard">
+
+        </div> 
+        <div class="dark" class="boxcard">
+
+        </div> 
+        <div class="dark" class="boxcard">
+
+        </div> 
+
+
+        </div>
+
+    </div>
+    </div>
+    
+        <div class="box">
+         <div class="light" class="boxcard">
+
+     </div> <div class="light" class="boxcard">
+
+     </div> 
+     <div class="light" class="boxcard">
+
+     </div> 
+     <div class="light" class="boxcard">
+
+     </div> 
+     <div class="light" class="boxcard">
+
+     </div> 
+     <div class="light" class="boxcard">
+
+     </div> 
+     <div class="light" class="boxcard">
+
+     </div> 
+     <div class="light" class="boxcard">
+
+     </div> 
+     <div class="light" class="boxcard">
+
+     </div> 
+     <div class="light" class="boxcard">
+
+     </div> 
+     <div class="light" class="boxcard">
+
+     </div> 
+     <div class="light" class="boxcard">
+
+     </div> 
+     <div class="light" class="boxcard">
+
+     </div> 
+     <div class="light" class="boxcard">
+
+     </div> 
+
+
+     </div>
+
+ </div>
+
+        
+</body>
+</html>
