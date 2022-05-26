@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masaisteps grid</title>
+    <style>
+        div>h1{
+            width: 350px;
+            margin: auto;
+           
+            margin-top: 100px;
+            text-align: center;
+
+        }
+        #container{
+            width: 60%;
+           
+            margin: auto;
+            display: grid;
+           grid-template-rows: 120px;
+           grid-template-columns: repeat(5,1fr);
+            
+            gap: 20px;
+          padding: 70px;
+         border-radius: 30px;
+         background-color: #f5ece6;
+            
+
+
+     
+
+        }
+        #container>div:nth-child(1)
+        {
+           
+            background-color: white;
+            border-radius: 20px;
+        
+            
+        }
+        #container>div:nth-child(2)
+        {   background-color: white;
+            
+            border-radius: 20px;
+        }
+        #container>div:nth-child(3)
+        {   background-color: white;
+           
+            border-radius: 20px;
+        }
+        #container>div:nth-child(4)
+        {    background-color: white;
+           
+            border-radius: 20px;
+        }
+        #container>div:nth-child(5)
+        {  background-color: white;
+           
+           
+            border-radius: 20px;
+        }
+        #container>div>div
+        { width: 30px;
+            height:30px;
+            margin: auto;
+            margin-top: 22px;
+          
+            border-radius: 5px;
+            text-align: center;
+           
+            background-color:#f5ece6;
+           font-size: 20px;
+        
+        }
+        #container>div>div+p{
+            margin: auto;
+            width: 80%;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body><div>
+    <h1>Ready to Realise Your Career Potential?</h1>
+</div>
+<div id="container">
+    <div>
+       <div>1</div>
+       <p>Apply for the program</p>
+    </div>
+    <div>
+        <div>2</div>
+        <p>Apply for the program</p>
+    </div>
+    <div>
+        <div>3</div>
+        <p>Apply for the program</p>
+    </div>
+    <div>
+        <div>4</div>
+        <p>Apply for the program</p>
+    </div>
+    <div>
+        <div>5</div>
+        <p>Apply for the program</p>
+    </div>
+
+</div>
+   
+</body>
+</html>
