@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini calculator</title>
+</head>
+<body>
+    <input type="number" id="input1" placeholder="Input your first number" value=""/>
+    <input type="number" id="input2" placeholder="Input your second number" value=""/>
+    <hr>
+   
+    <button id="add" onclick="add()" >Add</button>
+    <button id="subtract" onclick="sub()">Subtract</button>
+    <button id="multi" onclick="mul()" >Multiply</button>
+    <button id="divide" onclick="div()" >Divide</button>
+</body>
+</html>
+<script>
+function add()
+{
+   let x=document.getElementById("input1").value;
+   let y=document.getElementById("input2").value;
+   let z=Number(x)+Number(y);
+   alert(z);
+}
+function sub()
+{
+   let x=document.getElementById("input1").value;
+   let y=document.getElementById("input2").value;
+   let z=Number(x)-Number(y);
+   alert(z);
+}
+function mul()
+{
+   let x=document.getElementById("input1").value;
+   let y=document.getElementById("input2").value;
+   let z=Number(x)*Number(y);
+   alert(z);
+}
+function div()
+{
+   let x=document.getElementById("input1").value;
+   let y=document.getElementById("input2").value;
+   let z=Number(x)/Number(y);
+   alert(z);
+}
+</script>

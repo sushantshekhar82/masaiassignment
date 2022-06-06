@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid1</title>
+<style>
+    body>#container
+    {
+        margin-top: 50px;
+    }
+    #container
+    {
+        display: grid;
+        
+        width:92%;
+       
+       grid-template-rows: repeat(3,150px);
+       grid-template-columns: repeat(4,300px);
+       gap:10px;
+       margin: auto;
+       grid-template-areas: 
+       "a a c c"
+       "e f f f"
+       "i i i i"
+       ;
+     
+      
+    }
+    #container>div:nth-child(1)
+    {
+        background-color: grey;
+        grid-area: a;
+        border-radius: 10px;
+      
+
+    }
+    #container>div:nth-child(2)
+    {
+        background-color: grey;
+        grid-area: b;
+        border-radius: 10px;
+
+    }
+    #container>div:nth-child(3)
+    {
+        
+        background-color: grey;
+        grid-area: c;
+        border-radius: 10px;
+
+    }
+    #container>div:nth-child(4)
+    {
+        background-color: grey;
+        grid-area: d;
+        border-radius: 10px;
+
+    }
+    #container>div:nth-child(5)
+    {
+        background-color: grey;
+        grid-area: e;
+        border-radius: 10px;
+
+    }
+    #container>div:nth-child(6)
+    {
+        background-color: grey;
+        grid-area: f;
+        border-radius: 10px;
+
+
+    }
+    #container>div:nth-child(7)
+    {
+        background-color: grey;
+        grid-area: g;
+        border-radius: 10px;
+
+    }
+    #container>div:nth-child(8)
+    {
+        background-color: grey;
+        grid-area: h;
+        border-radius: 10px;
+
+
+    }
+    #container>div:nth-child(9)
+    {
+        background-color: grey;
+        grid-area: i;
+        border-radius: 10px;
+
+
+    }
+    #container>div:nth-child(10)
+    {
+        background-color: grey;
+        grid-area: j;
+        border-radius: 10px;
+
+    }
+    #container>div:nth-child(11)
+    {
+        background-color: grey;
+        grid-area: k;
+        border-radius: 10px;
+
+    }
+    #container>div:nth-child(12)
+    {background-color: grey;
+        grid-area: l;
+        border-radius: 10px;
+
+
+    }
+
+</style>    
+</head>
+<body>
+<div id="container">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>    
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mqlayout2</title>
+    <style>
+        #container{
+            width: 100%;
+          
+            margin: 10px;
+        
+           
+        }
+        .top
+        {
+            display: grid;
+           
+            grid-template-rows: 100px ;
+            grid-template-columns:100%;
+            justify-content: center;
+            align-content: center;
+            background-color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 60px;
+            color: gray;
+          
+        }
+        .top>div:nth-child(1){
+            background-color: yellow;
+          
+         margin-right: 15px;
+            font-size: 50px;
+            color: gray;
+            
+        }
+        .bot
+        {
+            
+            display: grid;
+            
+            margin: auto;
+            gap: 50px;
+            grid-template-rows: 700px ;
+            grid-template-columns:48% 48% ;
+        
+        }
+        .bot>div:nth-child(1){
+            margin-left: 10px;
+            
+            font-size: 50px;
+            color: gray;
+            background-color: red;
+
+        }
+        .bot>div:nth-child(2){
+            margin-right: 20px;
+         
+            background-color: green;
+            font-size: 50px;
+            color: gray;
+
+        }
+        /* @media only screen and (min-width: 500px) and (max-width: 768px) {
+        } */
+
+        @media only screen and (min-width: 320px) and (max-width: 499px) {
+
+         #container{
+            width: 100%;
+            margin-right: 15px;
+          
+          
+        
+           
+        }
+        .top
+        {
+            display: grid;
+           
+            grid-template-rows: 100px ;
+            grid-template-columns:100%;
+            justify-content: center;
+            align-content: center;
+            background-color: white;
+          
+            /* margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 80px;
+            color: gray; */
+          
+        }
+        .top>div:nth-child(1){
+            background-color: yellow;
+          
+         margin-right: 15px;
+            font-size: 50px;
+            color: gray;
+            
+        }
+        .bot
+        {
+            
+            display: grid;
+            
+        
+            gap: 30px;
+            grid-template-rows: 220px 220px;
+            grid-template-columns:100%;
+            justify-content: center;
+            
+            align-content: center;
+        
+        }
+        .bot>div:nth-child(1){
+         
+            margin-left: 15px;
+         margin-right: 15px;
+            font-size: 50px;
+            color: gray;
+            background-color: red;
+
+        }
+        .bot>div:nth-child(2){
+           margin-left: 15px;
+         margin-right: 15px;
+            background-color: green;
+            font-size: 50px;
+            color: gray;
+
+        }
+    }
+       
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="top">
+            <div>Navigation</div>
+        </div>
+        <div class="bot">
+            <div>Left</div>
+            <div>Right</div>
+        </div>
+    </div>
+</body>
+</html>

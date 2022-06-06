@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mqlayout3</title>
+    <style>
+           #container{
+            width: 100%;
+          
+            margin: 10px;
+        
+           
+        }
+        .nav{
+            display: grid;
+           
+            grid-template-rows: 100px ;
+            grid-template-columns:100%;
+            justify-content: center;
+            
+            background-color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+           
+            margin-right: 10px;
+            font-size: 60px;
+            color: gray;
+
+
+        }
+        .nav>div:nth-child(1){
+            background-color: yellow;
+          
+       
+            font-size: 50px;
+            color: gray;
+            
+        }
+        .bot
+        {
+            display: grid;
+            
+            margin: auto;
+            gap: 50px;
+            grid-template-rows: 600px ;
+            grid-template-columns:57% 39% ;
+
+        }
+        .bot>div:nth-child(1){
+           
+            
+            font-size: 50px;
+            color: gray;
+            background-color: red;
+
+        }
+        .bot>div:nth-child(2){
+            margin-right: 20px;
+         
+            
+
+        }
+        .right{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows:190px 190px 190px ;
+            gap:10px;
+
+        }
+        .right>div
+        {
+           
+            background-color: green;
+        }
+       
+        @media only screen and (min-width: 500px) and (max-width: 768px) {
+            #container{
+            width: 100%;
+          
+            margin: 10px;
+        
+           
+        }
+       
+        .bot
+        {
+            display: grid;
+            
+            margin: auto;
+            gap: 50px;
+            grid-template-rows:300px 300px ;
+            grid-template-columns:100%;
+            justify-content: center;
+            align-content: center;
+          
+
+        }
+        .bot>div:nth-child(1){
+           
+            
+            font-size: 50px;
+            color: gray;
+            background-color: red;
+            margin-right: 10px;
+
+        }
+        .bot>div:nth-child(2){
+            margin-right: 20px;
+         
+            
+
+        }
+        .right{
+            justify-content: center;
+            
+            display: grid;
+            grid-template-columns:33% 33% 33%;
+            grid-template-rows: 150px ;
+            gap:10px;
+            margin-right: 10px;
+            margin-left: 10px;
+          
+
+        }
+        .right>div
+        {
+            
+            background-color: green;
+        }
+       
+
+        }
+        @media only screen and (min-width: 320px) and (max-width: 499px) {
+            .bot
+        {
+            display: grid;
+            
+            margin: auto;
+            gap: 50px;
+            grid-template-rows:300px 300px ;
+            grid-template-columns:100%;
+            justify-content: center;
+            align-content: center;
+          
+
+        }
+        .bot>div:nth-child(1){
+           
+            
+            font-size: 50px;
+            color: gray;
+            background-color: red;
+            margin-right: 10px;
+
+        }
+        .bot>div:nth-child(2){
+            margin-right: 20px;
+         
+            
+
+        }
+        .right{
+            justify-content: center;
+            
+            display: grid;
+            grid-template-columns:100%;
+            grid-template-rows: 150px 150px 150px ;
+            gap:10px;
+            margin-right: 10px;
+            margin-left: 10px;
+          
+
+        }
+        .right>div
+        {
+            
+            background-color: green;
+        }
+       
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="nav">
+            <div></div>
+        </div>
+        <div class="bot">
+            <div></div>
+            <div class="right">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
