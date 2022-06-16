@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container
+        {
+            display: grid;
+            grid-template-rows: repeat(2,auto);
+            grid-template-columns: repeat(4,20%);
+            gap: 10px;
+           justify-content: center;
+            
+         
+
+        }
+        #container>div{
+            
+            display:grid;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 20px;
+           
+        }
+        #container>div>img{
+           border-radius: 20px;
+           width: 100%;
+        }
+        #container>div>img+h1{
+            text-align: center;
+        }
+        #container>div>h1+img{
+            display: block;
+     margin-bottom: 10px;
+         margin: auto;
+         width:100px;
+         height: 40px;
+         line-height: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+    
+</body>
+</html>
+<script>
+    let mentor=[
+        {img:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg",name:"Kanish aman",company:"https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg"},
+
+        {img:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg",name:"Kanish aman",company:"https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg"},
+        {img:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg",name:"Kanish aman",company:"https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg"},
+        {img:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg",name:"Kanish aman",company:"https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg"},
+        {img:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg",name:"Kanish aman",company:"https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg"},
+        {img:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg",name:"Kanish aman",company:"https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg"},
+        {img:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg",name:"Kanish aman",company:"https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg"},
+        {img:"https://masai-website-images.s3.ap-south-1.amazonaws.com/kanishk_aman_247ff1ba31.jpg",name:"Kanish aman",company:"https://masai-website-images.s3.ap-south-1.amazonaws.com/flipkart_e9b84a5d5e.svg"},
+    ];
+    mentor.map(function(elem){
+        let design=document.createElement("div");
+        let image=document.createElement("img");
+        image.setAttribute("src",elem.img);
+        let heading=document.createElement("h1");
+         heading.innerText=elem.name;
+         let image1=document.createElement("img");
+        image1.setAttribute("src",elem.company);
+       design.append(image,heading,image1);
+      
+        document.querySelector("#container").append(design);
+
+        
+
+    });
+</script>

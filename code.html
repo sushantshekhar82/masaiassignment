@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+  
+  let btnobj=[
+      {name:"Primary",color:"white", bgcolor:"blue"},
+      {name:"Secondary",color:"white", bgcolor:"grey"},
+      {name:"Danger",color:"white", bgcolor:"red"},
+      {name:"Warning",color:"black", bgcolor:"yellow"},
+      {name:"Info",color:"white", bgcolor:"cyan"},
+      {name:"Light",color:"black", bgcolor:"white"},
+      {name:"Success",color:"white", bgcolor:"green"},
+      {name:"Dark",color:"white", bgcolor:"black"},
+      {name:"Link",color:"blue", bgcolor:"white"},
+    ];
+//    for(let i=0;i<btnobj.length;i++)
+//    { let btnn= document.createElement("button");
+// //    let x=document.createElement("hr");
+//     btnn.innerText=btnobj[i].name;
+//     btnn.style.backgroundColor=btnobj[i].bgcolor;
+//     btnn.style.color=btnobj[i].color;
+//     document.querySelector("body").append(btnn);
+//     // document.querySelector("body").append(x);
+    
+//    }
+  btnobj.map(function(elem){
+    let btnn= document.createElement("button");
+//    let x=document.createElement("hr");
+    btnn.innerText=elem.name;
+    btnn.style.backgroundColor=elem.bgcolor;
+    btnn.style.color=elem.color;
+    btnn.style.margin="5px";
+    document.querySelector("body").append(btnn);
+    // document.querySelector("body").append(x);
+  })
+
+    
+</script>

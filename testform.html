@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <input  id="inp" type="text"/>
+    <button id="btn">submit</button>
+    <h1></h1>
+
+    <form>
+        <input  id="inp1" type="text"/>
+        <input type="submit"/>
+        <h2></h2>
+    
+    </form>
+</body>
+</html>
+<script>
+ let x=document.querySelector("#inp");
+    
+    document.querySelector("#btn").addEventListener("click",fun);
+    function fun(){
+        document.querySelector("h1").innerText=x.value;
+      
+        
+    }
+   
+    document.querySelector("form").addEventListener("submit",fun1);
+    function fun1(event){
+        event.preventDefault();
+        let y=document.querySelector("#inp1");
+        document.querySelector("h2").innerText=y.value;
+      
+        
+    }
+</script>
